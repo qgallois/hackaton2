@@ -22,18 +22,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
     }
   });
 })
-.config(function($stateProvider, $urlRouterProvider) {
 
-  $stateProvider
-  .state('map', {
-    url: '/',
-    templateUrl: 'templates/tab-map.html',
-    controller: 'mapController'
-  });
-
-  $urlRouterProvider.otherwise("/");
-
-})
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
@@ -48,9 +37,6 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
-  .controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
-
-})
 
   // Each tab has its own nav history stack:
 
@@ -81,7 +67,31 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
           controller: 'ChatDetailCtrl'
         }
       }
-    });
+    })
+
+  .state('tab.map', {
+    url: '/map',
+    views: {
+      'tab-map': {
+        templateUrl: 'templates/tab-map.html',
+        controller: 'mapController'
+      }
+    }
+  });
+
+/*.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+  .state('map', {
+    url: '/',
+    templateUrl: 'templates/tab-map.html',
+    controller: 'mapController'
+  });
+
+  $urlRouterProvider.otherwise("/");
+
+})*/
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
