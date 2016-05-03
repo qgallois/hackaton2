@@ -6,7 +6,6 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter.services'])
-
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -79,18 +78,10 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
     }
   });
 
-/*.config(function($stateProvider, $urlRouterProvider) {
 
-  $stateProvider
-  .state('map', {
-    url: '/',
-    templateUrl: 'templates/tab-map.html',
-    controller: 'mapController'
-  });
 
   $urlRouterProvider.otherwise("/");
 
-})*/
 
 
   // if none of the above states are matched, use this as the fallback
