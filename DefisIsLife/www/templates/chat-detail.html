@@ -13,9 +13,9 @@
     <p>
       <h2>Nouveau défi</h2>
       <label class="item item-input">
-        <textarea placeholder="Proposer un défi" rows=8></textarea>
+        <textarea placeholder="Proposer un défi" rows=8  ng-model="newMessage"></textarea>
       </label>
-      <button class="button button-block button-positive" ng-click="sendMail">
+      <button class="button button-block button-positive" ng-click="chat.lastText=newMessage">
         Envoyer
       </button>
       <button class="button button-block button-balanced" ng-click="chat.score=chat.score + 1">
