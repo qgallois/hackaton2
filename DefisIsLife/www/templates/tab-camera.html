@@ -1,0 +1,17 @@
+<ion-view view-title="Ton Profil">	
+	<ion-content ng-controller="cameraController">
+		<div class="list">
+			<div class="item item-thumbnail-left item-text-wrap">
+				<img ng-src="{{pictureUrl}}">
+				<h2>Caro <B><u>Datebayo</u></B></h2>
+				<p><B>Description / Centres d'intérêts :</B> J'adore inviter mes amis pour manger chinois ou des pizzas et les défiers ! <B><u>Datebayo</u></B></p>
+			</div>
+			<div class="padding">
+				<button ng-click="takePicture()" class="button button-positive">Prendre une Photo <B><u>Datebayo</u></B></button>
+			</div>
+		</div>
+		<div class="row responsive-sm">
+			<div class="col">Dernier Défis remporté : Un dîner plus que parfait ! <B><u>Datebayo</u></B></div>
+		</div>
+	</ion-content>
+</ion-view>

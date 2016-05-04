@@ -1,0 +1,3 @@
+function inscriptionController($scope, $state) {
+	
+}

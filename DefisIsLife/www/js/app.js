@@ -50,6 +50,16 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
     }
   })
 
+  .state('tab.inscription', {
+    url: '/inscription',
+    views: {
+      'inscription': {
+        templateUrl: 'templates/inscription.html',
+        controller: 'inscriptionController'
+      }
+    }
+  })
+
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -59,6 +69,7 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
         }
       }
     })
+
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {
@@ -77,8 +88,17 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
         controller: 'mapController'
       }
     }
-  });
+  })
 
+  .state('tab.camera', {
+    url: '/camera',
+    views: {
+      'tab-camera': {
+        templateUrl: 'templates/tab-camera.html',
+        controller: 'cameraController'
+      }
+    }
+  });
 /*.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
