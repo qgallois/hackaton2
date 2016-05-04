@@ -11,6 +11,7 @@ angular.module('starter.services', [])
     face: 'img/Alex.jpg',
     lat: 48.558853,
     lng: 1.045923,
+    mail:alexandre_cottin@live.fr,
     score:10
   }, {
     id: 1,
@@ -19,6 +20,7 @@ angular.module('starter.services', [])
     face: 'img/emilie.jpg',
     lat: 48.502766,
     lng: 1.058319,
+    mail:emilie.chartier@sfr.fr,
     score:6
   }, {
     id: 2,
@@ -27,6 +29,7 @@ angular.module('starter.services', [])
     face: 'img/hadrien.jpg',
     lat: 48.503790,
     lng: 1.019776,
+    mail:buret.hadrien@orange.fr,
     score:7
   }, {
     id: 3,
@@ -35,6 +38,7 @@ angular.module('starter.services', [])
     face: 'img/jb.jpg',
     lat: 48.520052,
     lng: 0.979859,
+    mail:contact@jbpasquier.eu,
     score:10
   }, {
     id: 4,
@@ -43,6 +47,7 @@ angular.module('starter.services', [])
     face: 'img/thomas.jpg',
     lat: 48.536511,
     lng: 1.154971,
+    mail:,
     score:3
   }];
 

@@ -1,5 +1,7 @@
 angular.module('starter.controllers', [])
 
+.controller('mapController', mapController)
+
 .controller('DashCtrl', function($scope) {
   $scope.login = "";
 })
