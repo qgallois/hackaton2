@@ -7,8 +7,20 @@
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
     <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
+    <p>Score : <span class="badge badge-assertive">{{chat.score}}</span><br />
+      <b>Dernier défit : </b>{{chat.lastText}}
     </p>
+    <p>
+      <h2>Nouveau défit</h2>
+      <label class="item item-input">
+        <textarea placeholder="Comments" rows=8></textarea>
+      </label>
+      <button class="button button-block button-positive">
+        Envoyer
+      </button>
+
+    </p>
+    <script type="text/javascript">
+    </script>
   </ion-content>
 </ion-view>
